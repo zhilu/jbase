@@ -23,5 +23,7 @@
 	</build>
 	<modules>
 		<module>math</module>
+		<module>app</module>
+		<module>protocol</module>
 	</modules>
 </project>
