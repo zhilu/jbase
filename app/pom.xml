@@ -12,5 +12,7 @@
   <description>java app</description>
   <modules>
     <module>zkapp</module>
+    <module>tools</module>
+    <module>base</module>
   </modules>
 </project>
