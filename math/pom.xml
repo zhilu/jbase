@@ -13,5 +13,6 @@
   <modules>
     <module>hcluster</module>
     <module>cluster</module>
+    <module>kohonen</module>
   </modules>
 </project>
