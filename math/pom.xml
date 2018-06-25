@@ -14,5 +14,6 @@
     <module>hcluster</module>
     <module>cluster</module>
     <module>kohonen</module>
+    <module>classifier</module>
   </modules>
 </project>
