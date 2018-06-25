@@ -26,5 +26,7 @@
 		<module>app</module>
 		<module>protocol</module>
     <module>nbase</module>
-  </modules>
+    <module>frame</module>
+    <module>risk</module>
+	</modules>
 </project>
