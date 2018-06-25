@@ -14,5 +14,6 @@
     <module>zkapp</module>
     <module>tools</module>
     <module>base</module>
+    <module>nbase</module>
   </modules>
 </project>
