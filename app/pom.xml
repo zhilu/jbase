@@ -15,5 +15,6 @@
     <module>tools</module>
     <module>base</module>
     <module>nbase</module>
+    <module>rx</module>
   </modules>
 </project>
