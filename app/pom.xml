@@ -16,5 +16,9 @@
     <module>base</module>
     <module>nbase</module>
     <module>rx</module>
+    <module>frm</module>
+    <module>spring</module>
+    <module>threads</module>
+    <module>swagger</module>
   </modules>
 </project>
