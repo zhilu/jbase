@@ -15,5 +15,7 @@
     <module>cluster</module>
     <module>kohonen</module>
     <module>classifier</module>
+    <module>libsvm</module>
+    <module>algorithm</module>
   </modules>
 </project>
