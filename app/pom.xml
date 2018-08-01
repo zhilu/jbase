@@ -16,5 +16,6 @@
     <module>base</module>
     <module>nbase</module>
     <module>rx</module>
+    <module>rxjava</module>
   </modules>
 </project>
