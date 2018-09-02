@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/base" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/frm" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/nbase" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/rx" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/spring" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/swagger" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/threads" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/tools" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/zkapp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/math/algorithm" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/math/classifier" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/math/cluster" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/math/hcluster" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/math/kohonen" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/math/libsvm" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/protocol/mqtt" charset="UTF-8" />
+  </component>
+</project>
