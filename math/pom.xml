@@ -17,5 +17,6 @@
     <module>classifier</module>
     <module>libsvm</module>
     <module>algorithm</module>
+    <module>other</module>
   </modules>
 </project>

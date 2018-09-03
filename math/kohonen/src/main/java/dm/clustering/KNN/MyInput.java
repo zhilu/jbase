@@ -1,0 +1,30 @@
+package dm.clustering.KNN;
+//MyInput.java:Contain the methods for reading int,double,and string values from the keyboard
+
+//javaû���ṩ���̶������ݵķ���
+
+import java.io.*;
+
+public class MyInput {
+
+	public static String readString() {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in), 1);
+		String string = " ";
+		try {
+			string = br.readLine();
+
+		} catch (IOException ex) {
+			System.out.println(ex);
+		}
+		return string;
+	}
+
+	public static int readInt() {
+		return Integer.parseInt(readString());
+	}
+
+	public static double readDouble() {
+		return Double.parseDouble(readString());
+	}
+
+}
