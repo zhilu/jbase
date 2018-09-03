@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<PMML version="4.2" xmlns="http://www.dmg.org/PMML-4_2"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<Header copyright="(C) Copyright IBM Corp. 1994, 2011">
+		<Application name="IBM SPSS Modeler" version="14.1.0" />
+		<Timestamp>Thu Jun 09 14:22:24 2011</Timestamp>
+	</Header>
+
+
+	<DataDictionary>
+		<DataField name="GENDER" displayName="Gender" optype="categorical"
+			dataType="string">
+			<Value value="f" displayValue="Female" property="valid" />
+			<Value value="m" displayValue="Male" property="valid" />
+		</DataField>
+		<DataField name="AGE" displayName="Age" optype="continuous"
+			dataType="integer">
+			<Interval closure="closedClosed" leftMargin="0" rightMargin="100" />
+		</DataField>
+	</DataDictionary>
+
+	
+
+
+</PMML>
