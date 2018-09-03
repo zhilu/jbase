@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.dal.mapper.UsersMapper">
+    <resultMap id="BaseResultMap" type="org.dal.bo.Users">
+    <result column="id" property="id" jdbcType="INTEGER" />
+    <result column="user_name" property="userName" jdbcType="VARCHAR" />
+    <result column="password" property="password" jdbcType="VARCHAR" />
+    <result column="salt" property="salt" jdbcType="VARCHAR" />
+    <result column="locked" property="locked" jdbcType="INTEGER" />
+    </resultMap>
+    
+    <sql id="Base_Column_List">
+        id,user_name,password,salt,locked
+    </sql>
+    
+    <sql id="searchBy">
+        <trim prefix="where" prefixOverrides="and|or">
+        
+            <if test="id != null and id != ''">
+                and id = #{id,jdbcType=INTEGER}
+            </if>
+            <if test="userName != null and userName != ''">
+                and userName = #{userName,jdbcType=VARCHAR}
+            </if>
+            <if test="password != null and password != ''">
+                and password = #{password,jdbcType=VARCHAR}
+            </if>
+            <if test="salt != null and salt != ''">
+                and salt = #{salt,jdbcType=VARCHAR}
+            </if>
+            <if test="locked != null and locked != ''">
+                and locked = #{locked,jdbcType=INTEGER}
+            </if>
+        
+        </trim>
+    </sql>
+    
+    <insert id="insert" parameterType="org.dal.bo.Users">
+        insert into sys_users
+        (<include refid="Base_Column_List" />)
+        values
+        (#{id,jdbcType=INTEGER},#{userName,jdbcType=VARCHAR},#{password,jdbcType=VARCHAR},#{salt,jdbcType=VARCHAR},#{locked,jdbcType=INTEGER})
+    </insert>
+    
+
+     <update id="update" parameterType="org.dal.bo.Users">
+        update sys_users set 
+		    id = #{id,jdbcType=INTEGER},
+		    user_name = #{userName,jdbcType=VARCHAR},
+		    password = #{password,jdbcType=VARCHAR},
+		    salt = #{salt,jdbcType=VARCHAR},
+		    locked = #{locked,jdbcType=INTEGER}
+        where id = #{id ,jdbcType=BIGINT}
+    </update>
+    
+    <select id="findByPrimary" resultMap="BaseResultMap" parameterType="java.lang.Long">
+        select
+        <include refid="Base_Column_List" />
+        from sys_users
+        where id = #{id,jdbcType=BIGINT}
+    </select>
+    
+    <select id="findSelective" resultMap="BaseResultMap" parameterType="java.util.HashMap">
+        select
+        <include refid="Base_Column_List" />
+        from sys_users
+        <include refid="searchBy"/> 
+        limit 0,1
+    </select>
+               
+    <select id="listSelective" resultMap="BaseResultMap" parameterType="java.util.HashMap">
+        select
+        <include refid="Base_Column_List" />
+        from sys_users
+        <include refid="searchBy"/>
+    </select>
+
+	<delete id="delete" parameterType="java.lang.Long">
+        delete from sys_users where id = #{id,jdbcType=BIGINT}
+	</delete>
+</mapper>
