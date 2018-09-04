@@ -28,5 +28,6 @@
     <module>nbase</module>
     <module>frame</module>
     <module>risk</module>
+    <module>sapp</module>
 	</modules>
 </project>
