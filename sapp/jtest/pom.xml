@@ -10,11 +10,9 @@
   <groupId>shi</groupId>
   <artifactId>jtest</artifactId>
   <version>0.0.1</version>
-  <name>jtest</name>
+  <packaging>war</packaging>
+  <name>jtest Maven Webapp</name>
   <url>http://maven.apache.org</url>
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -23,4 +21,7 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <build>
+    <finalName>jtest</finalName>
+  </build>
 </project>
