@@ -29,5 +29,6 @@
     <module>frame</module>
     <module>risk</module>
     <module>sapp</module>
+    <module>boot</module>
 	</modules>
 </project>
