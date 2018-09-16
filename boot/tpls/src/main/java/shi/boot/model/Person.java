@@ -1,4 +1,4 @@
-package shi.boot;
+package shi.boot.model;
 
 public class Person {
 	private String name;
