@@ -1,7 +1,13 @@
 package shi.boot.model;
 
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotEmpty;
+
 public class Person {
+	
+	@NotEmpty
 	private String name;
+	@Min(value = 18)
 	private Integer age;
 	
 	public Person() {
