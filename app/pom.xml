@@ -16,6 +16,7 @@
     <module>base</module>
     <module>nbase</module>
     <module>rx</module>
+    <module>rxjava</module>
     <module>frm</module>
     <module>spring</module>
     <module>threads</module>
